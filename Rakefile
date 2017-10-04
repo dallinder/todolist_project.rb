@@ -1,5 +1,6 @@
 require "rake/testtask"
 require 'find'
+require 'bundler/gem_tasks'
 
 desc 'Say hello'
 task :hello do
@@ -22,3 +23,4 @@ task :inventory do
     puts name if File.file?(name)
   end
 end
+
